@@ -1,17 +1,40 @@
 import Form from "next/form";
 
-export default function QuoteForm() {
+const QuoteForm = () => {
   return (
     <Form action="/search">
-      <label>Full Name:</label>
-      <input type="text" name="full name" id="name" />
-      <label>Email:</label>
-      <input type="email" name="email" id="email" />
-      <label>Phone Number:</label>
-      <input type="number" name="phone" id="phone" />
-      <label>City/Suburb:</label>
-      <input type="text" name="city" id="city" />
-      <button type="submit">Submit</button>
+      <div className="p-20">
+        <label className="mr-5">Name:</label>
+        <div className="mb-5 mt-1">
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <label>Email:</label>
+        <div className="mb-5 mt-1">
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <label>Phone Number:</label>
+        <div className="mb-5 mt-1">
+          <input type="number" name="phone" id="phone" />
+        </div>
+
+        <label>City/Suburb:</label>
+        <div className="mb-5 mt-1">
+          <input type="text" name="city" id="city" />
+        </div>
+
+        <label>Message:</label>
+        <div className="mb-5 mt-1">
+          <textarea placeholder="Type something..." className="w-lg"/>
+        </div>
+
+        <button type="submit" className="btn btn-primary my-5">
+          Submit
+        </button>
+      </div>
     </Form>
   );
-}
+};
+
+export default QuoteForm;

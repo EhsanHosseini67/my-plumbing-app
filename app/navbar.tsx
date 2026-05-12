@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Flex, Box, Button } from "@radix-ui/themes";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
+import QuoteButton from "./components/QuoteButton";
 
 const NavBar = () => {
   return (
@@ -14,20 +15,18 @@ const NavBar = () => {
           <Flex>
             <ul className="flex space-x-20">
               <li>
-                <Link href="/">About us</Link>
+                <Link href="/About">About us</Link>
               </li>
               <li>
-                <Link href="/">Services</Link>
+                <Link href="/Services">Services</Link>
               </li>
               <li>
-                <Link href="/">Contact us</Link>
+                <Link href="/Contact">Contact us</Link>
               </li>
             </ul>
           </Flex>
           <Flex align="center" gap="5">
-            <button className="btn btn-info btn-lg rounded-full">
-              Get A Quote
-            </button>
+            <QuoteButton/>
             <button className="btn btn-info btn-lg rounded-full">
               <FaPhone />
               0477123456
