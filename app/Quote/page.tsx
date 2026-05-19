@@ -29,7 +29,7 @@ const QuoteForm = () => {
           <textarea placeholder="Type something..." className="w-lg"/>
         </div>
 
-        <button type="submit" className="btn btn-primary my-5">
+        <button type="submit" className="btn btn-primary my-5 rounded-full">
           Submit
         </button>
       </div>

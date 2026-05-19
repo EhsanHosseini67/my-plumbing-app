@@ -6,7 +6,7 @@ import QuoteButton from "./components/QuoteButton";
 
 const NavBar = () => {
   return (
-    <nav className="bg-emerald-950 text-white text-xl font-sans">
+    <nav className="bg-emerald-950 text-white text-xl font-sans sticky top-0 z-50">
       <Container className="p-3">
         <Flex justify="between" align="center" gap="1">
           <Link href="/" className="mr-3">

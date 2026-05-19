@@ -41,6 +41,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+.react-email/
+
 /app/generated/prisma
 
 /app/generated/prisma
