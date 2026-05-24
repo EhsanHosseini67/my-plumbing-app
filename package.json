@@ -30,7 +30,7 @@
     "@types/node": "^20.19.41",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "daisyui": "^5.5.19",
+    "daisyui": "^5.5.20",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
     "react-email-components": "0.1.13",

@@ -29,7 +29,7 @@ const AboutUs = () => {
           alt="who we are"
           width={920}
           height={600}
-          className="w-full h-auto rounded-3xl object-cover"
+          className="w-full h-auto rounded-2xl shadow-sm object-cover"
         />
       </div>
 
@@ -53,7 +53,7 @@ const AboutUs = () => {
           alt="why choose us"
           width={920}
           height={600}
-          className="w-full h-auto rounded-3xl object-cover"
+          className="w-full h-auto rounded-2xl shadow-sm object-cover"
         />
       </div>
 

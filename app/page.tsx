@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] w-full">
         <Image
-          src="/images/plumber-fixing-plumbing-system.jpg"
+          src="/images/mybackground.jpg"
           alt={"background image"}
           fill
           className="object-cover"
@@ -15,7 +15,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20" />
       </div>
       <Container className="my-10 px-4 md:px-6">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5">Welcome to Sydney plumbers</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5">
+          Welcome to Sydney plumbers
+        </h1>
         <p className="leading-8 text-gray-700">
           We are a proudly owned and run Australian family business. By that, we
           mean that we are not a corporation that only watches profits to keep
@@ -118,9 +120,9 @@ export default function Home() {
           {/* Content */}
           <div className="relative z-10 flex h-full items-center justify-center">
             <div className="text-center text-white px-4">
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">
+              <p className="text-3xl md:text-4 font-bold mb-4">
                 Need a Plumbing Expert in Sydney?
-              </h2>
+              </p>
               <p className="text-center justify-center mb-5 px-4 md:px-10 lg:px-20 text-base md:text-xl leading-8 md:leading-10">
                 Call CDL Plumbing & Drainage to speak to one of our friendly
                 technicians, get a free quote and get your plumbing project
@@ -129,13 +131,13 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-5">
                 <Link
                   href="/"
-                  className="btn btn-secondary text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
+                  className="btn  bg-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   Get A Quote
                 </Link>
                 <Link
                   href="/"
-                  className="btn btn-secondary text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
+                  className="btn  bg-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   0477123456
                 </Link>

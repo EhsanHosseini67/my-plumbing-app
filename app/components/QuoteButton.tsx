@@ -6,8 +6,8 @@ const QuoteButton = () => {
   const router = useRouter();
   return (
     <button
-      className="btn btn-info btn-lg rounded-full"
-      onClick={() => router.push('/Quote')}
+      className="btn bg-emerald-600 btn-lg rounded-full"
+      onClick={() => router.push("/Quote")}
     >
       Get A Quote
     </button>
