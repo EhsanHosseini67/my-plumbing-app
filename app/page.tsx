@@ -18,7 +18,7 @@ export default function Home() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5">
           Welcome to Sydney plumbers
         </h1>
-        <p className="leading-8 text-gray-700">
+        <p className="leading-8 text-gray-700 text-justify">
           We are a proudly owned and run Australian family business. By that, we
           mean that we are not a corporation that only watches profits to keep
           shareholders happy. We are a team of committed professional
@@ -37,7 +37,7 @@ export default function Home() {
           are a team of committed professional experienced plumbers who not only
           enjoy what we do but are part of your community.
         </p>
-        <p className="leading-8 text-gray-700 mt-5">
+        <p className="leading-8 text-gray-700 mt-5 text-justify">
           We are a proudly owned and run Australian family business. By that, we
           mean that we are not a corporation that only watches profits to keep
           shareholders happy. We are a team of committed professional
@@ -61,7 +61,7 @@ export default function Home() {
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 text-center">
               Expert Plumbing Services
             </h1>
-            <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8">
+            <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8 text-justify">
               CDL Plumbing & Drainage are a proud family-owned business with
               over 15 years of expert experience in the Lake Macquarie and
               Newcastle areas. We have 2 teams and fully equipped trucks ready
@@ -73,7 +73,7 @@ export default function Home() {
               require from us – punctuality, reliability, affordability and a
               friendly manner.
             </p>
-            <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8">
+            <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8 text-justify">
               We always answer all questions in an understandable way as
               communication is paramount and provide free quotes with no
               obligation. On top of that, we make sure that we leave all jobs
@@ -88,7 +88,7 @@ export default function Home() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5">
           How we guarantee a hassle-free experience
         </h1>
-        <p className="leading-8 text-gray-700">
+        <p className="leading-8 text-gray-700 text-justify">
           We are a proudly owned and run Australian family business. By that, we
           mean that we are not a corporation that only watches profits to keep
           shareholders happy. We are a team of committed professional
@@ -131,13 +131,13 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-5">
                 <Link
                   href="/"
-                  className="btn  bg-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
+                  className="btn  bg-emerald-600 text-white hover:bg-white hover:text-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   Get A Quote
                 </Link>
                 <Link
                   href="/"
-                  className="btn  bg-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
+                  className="btn  bg-emerald-600 text-white hover:bg-white hover:text-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   0477123456
                 </Link>
