@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Form from "next/form";
 
 const QuoteForm = () => {
@@ -69,7 +70,6 @@ const QuoteForm = () => {
           <input
             type="number"
             name="phone"
-            id="phone"
             className="w-full
             max-w-2xl
             h-11
@@ -158,3 +158,8 @@ const QuoteForm = () => {
 };
 
 export default QuoteForm;
+
+export const metadata: Metadata = {
+  title: 'Quote',
+  description: 'Get a quote about your business',
+}

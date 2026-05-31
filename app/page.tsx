@@ -1,4 +1,5 @@
 import { Box, Container } from "@radix-ui/themes";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -148,4 +149,10 @@ export default function Home() {
       </Container>
     </>
   );
+}
+
+export const metadata: Metadata =  {
+  title: 'Sydney Plumbing',
+  description: 'Trusted plumbing service in Sydney'
+
 }

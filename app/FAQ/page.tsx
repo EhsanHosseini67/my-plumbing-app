@@ -3,6 +3,7 @@ import React from "react";
 import ExpandableList from "../components/ExpandableList";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { Metadata } from "next";
 
 const Faq = () => {
   return (
@@ -43,3 +44,8 @@ const Faq = () => {
 };
 
 export default Faq;
+
+export const metadata: Metadata = {
+  title: 'Faq',
+  description: 'Frequently asked questions about our business',
+}

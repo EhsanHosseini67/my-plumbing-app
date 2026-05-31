@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Flex, Box, Button } from "@radix-ui/themes";
 import Link from "next/link";
 import { FaBars, FaPhone, FaXmark } from "react-icons/fa6";
@@ -8,17 +8,45 @@ import ThemeToggler from "./components/ThemeToggler";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setShowNavbar(false);
+      }
+
+      else {
+        setShowNavbar(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
-    <nav className="bg-emerald-950 text-white sticky top-0 z-50 shadow-md">
+    <nav
+      className={`bg-emerald-950 text-white sticky top-0 z-50 shadow-md transition-transform
+    duration-300
+    ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
+    >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="text-2xl font-bold tracking-wide">
             Logo
           </Link>
 
-          <div className="hidden lg:flex items-center gap-12">
-            <ul className="flex items-center gap-10 text-xl">
+          <div className="hidden lg:flex items-center gap-20">
+            <ul className="flex items-center gap-20 text-xl">
               <li>
                 <Link
                   href="/About"

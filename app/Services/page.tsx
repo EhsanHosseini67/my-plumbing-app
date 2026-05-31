@@ -1,4 +1,5 @@
 import { Container } from "@radix-ui/themes";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 
@@ -146,3 +147,8 @@ const page = () => {
 };
 
 export default page;
+
+export const metadata: Metadata = {
+  title: 'Services',
+  description: 'Ranges of services we offer',
+}

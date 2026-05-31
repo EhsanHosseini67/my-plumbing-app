@@ -1,4 +1,7 @@
 import React from "react";
+import { FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const FooterSection = () => {
   return (
@@ -6,10 +9,19 @@ const FooterSection = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <div>
           <h2 className="text-blue-900 font-bold text-xl mb-5">Contact Us</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>0477123456</li>
-            <li className="break-word">plumbing@gmail.com</li>
-            <li>2 Blaxcell road, Granville NSW 2142, Australia</li>
+          <ul className="space-y-2">
+            <div className="flex items-center gap-1">
+              <FaPhoneAlt className="text-black text-md shrink-0" />
+              <li>0477123456</li>
+            </div>
+            <div className="flex items-center gap-1">
+              <MdEmail className="text-black text-md shrink-0" />
+              <li className="break-word">plumbing@gmail.com</li>
+            </div>
+            <div className="flex items-start gap-1">
+              <FaLocationDot className="text-black text-md shrink-0 mt-1" />
+              <li>2 Blaxcell road, Granville NSW 2142, Australia</li>
+            </div>
           </ul>
         </div>
 

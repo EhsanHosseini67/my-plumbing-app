@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Container } from "@radix-ui/themes";
+import { Metadata } from "next";
 
 const AboutUs = () => {
   return (
@@ -11,7 +12,7 @@ const AboutUs = () => {
           Who We Are?
         </h1>
 
-        <p className="mb-5">
+        <p className="mb-5 text-justify">
           We are a proudly owned and run Australian family business. By that, we
           mean that we are not a corporation that only watches profits to keep
           shareholders happy. We are a team of committed professional
@@ -39,7 +40,7 @@ const AboutUs = () => {
           Why Choosing Us?
         </h1>
 
-        <p className="mb-5">
+        <p className="mb-5 text-justify">
           We are customer friendly, polite, and professional and will go the
           extra mile to ensure complete satisfaction because our reputation
           matters and referrals are a huge part of business.
@@ -74,3 +75,8 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'Know more about Sydney plumbing',
+}
