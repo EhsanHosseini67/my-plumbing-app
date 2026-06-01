@@ -7,23 +7,27 @@ const FaqItems = [
   {
     question: "Are we fully insured?",
     answer:
-      "Yes, we have a comprehensive insurance certificate and can guarantee any damage caused to your property during the job.",
+      "Yes, we are fully insured for all residential and commercial plumbing services, ensuring safe, reliable workmanship and complete customer protection.",
   },
   {
     question: "Do we offer emergency service?",
-    answer: "Yes, we provide 24/7 emergency plumbing services.",
+    answer:
+      "Yes, we offer 24/7 emergency plumbing services for urgent issues including burst pipes, blocked drains, and hot water system breakdowns, ensuring fast response and reliable repairs.",
   },
   {
     question: "Do we provide free quotes?",
-    answer: "Yes, we offer free quotes for all plumbing jobs.",
+    answer:
+      "Yes, we provide free, no-obligation quotes for all residential and commercial plumbing services, ensuring transparent pricing and clear communication from the start.",
   },
   {
-    question: "Do we provide free quotes?",
-    answer: "Yes, we offer free quotes for all plumbing jobs.",
+    question: "How much do plumbing services cost?",
+    answer:
+      "The cost of plumbing services varies depending on the type of work required, such as blocked drains, burst pipes, or hot water repairs. We provide upfront, transparent pricing for all residential and commercial plumbing services so you always know what to expect before we begin.",
   },
   {
-    question: "Do we provide free quotes?",
-    answer: "Yes, we offer free quotes for all plumbing jobs.",
+    question: "Do you do small plumbing jobs?",
+    answer:
+      "Yes, we provide plumbing services for jobs of all sizes, including small repairs such as leaking taps, blocked sinks, and toilet issues, as well as larger plumbing work for homes and businesses.",
   },
 ];
 
@@ -46,7 +50,11 @@ const ExpandableList = () => {
           </div>
 
           <button onClick={() => toggleItem(index)}>
-            {expanded === index ? <TiMinus className="text-xl"/> : <TiPlus className="text-xl" />}
+            {expanded === index ? (
+              <TiMinus className="text-xl" />
+            ) : (
+              <TiPlus className="text-xl" />
+            )}
           </button>
         </div>
       ))}

@@ -17,45 +17,35 @@ export default function Home() {
       </div>
       <Container className="my-10 px-4 md:px-6">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5">
-          Welcome to Sydney plumbers
+          Welcome to Sydney plumbing
         </h1>
         <p className="leading-8 text-gray-700 text-justify">
-          We are a proudly owned and run Australian family business. By that, we
-          mean that we are not a corporation that only watches profits to keep
-          shareholders happy. We are a team of committed professional
-          experienced plumbers who not only enjoy what we do but are part of
-          your community.We are a proudly owned and run Australian family
-          business. By that, we mean that we are not a corporation that only
-          watches profits to keep shareholders happy. We are a team of committed
-          professional experienced plumbers who not only enjoy what we do but
-          are part of your community.We are a proudly owned and run Australian
-          family business. By that, we mean that we are not a corporation that
-          only watches profits to keep shareholders happy. We are a team of
-          committed professional experienced plumbers who not only enjoy what we
-          do but are part of your community.We are a proudly owned and run
-          Australian family business. By that, we mean that we are not a
-          corporation that only watches profits to keep shareholders happy. We
-          are a team of committed professional experienced plumbers who not only
-          enjoy what we do but are part of your community.
-        </p>
-        <p className="leading-8 text-gray-700 mt-5 text-justify">
-          We are a proudly owned and run Australian family business. By that, we
-          mean that we are not a corporation that only watches profits to keep
-          shareholders happy. We are a team of committed professional
-          experienced plumbers who not only enjoy what we do but are part of
-          your community.We are a proudly owned and run Australian family
-          business. By that, we mean that we are not a corporation that only
-          watches profits to keep shareholders happy. We are a team of committed
-          professional experienced plumbers who not only enjoy what we do but
-          are part of your community.We are a proudly owned and run Australian
-          family business. By that, we mean that we are not a corporation that
-          only watches profits to keep shareholders happy. We are a team of
-          committed professional experienced plumbers who not only enjoy what we
-          do but are part of your community.We are a proudly owned and run
-          Australian family business. By that, we mean that we are not a
-          corporation that only watches profits to keep shareholders happy. We
-          are a team of committed professional experienced plumbers who not only
-          enjoy what we do but are part of your community.
+          Welcome to Sydney Plumbing, your trusted local plumbing experts
+          providing fast, reliable, and affordable plumbing services across
+          Sydney. We specialise in delivering high-quality plumbing solutions
+          for both residential and commercial properties, helping homeowners,
+          landlords, and businesses keep their plumbing systems running smoothly
+          all year round. Whether you are facing an urgent plumbing emergency or
+          planning routine maintenance, our licensed and experienced plumbers
+          are ready to help. We understand that plumbing issues can be stressful
+          and disruptive, which is why we focus on prompt response times, clear
+          communication, and effective long-term solutions that you can rely on.
+          Our team handles a full range of plumbing services, including blocked
+          drains, burst pipes, hot water system repairs and installations, heat
+          pump hot water systems, toilet repairs, leak detection, and general
+          plumbing maintenance. No matter the size or complexity of the job, we
+          approach every project with professionalism, attention to detail, and
+          a commitment to getting it right the first time. At Sydney Plumbing,
+          we combine modern tools and proven industry techniques to quickly
+          diagnose issues and provide efficient repairs. We pride ourselves on
+          honest, upfront pricing with no hidden surprises, so you always know
+          what to expect before work begins. Based in Sydney, we are dedicated
+          to providing dependable plumbing services tailored to the needs of our
+          local community. Our goal is not just to fix plumbing problems, but to
+          deliver peace of mind through quality workmanship and trustworthy
+          service. If you're looking for a reliable plumber in Sydney, Sydney
+          Plumbing is here to help with fast service, expert solutions, and
+          customer-focused care you can depend on.
         </p>
         <div className="card w-full bg-cyan-100 shadow-md my-10 rounded-3xl">
           <div className="card-body">
@@ -63,26 +53,30 @@ export default function Home() {
               Expert Plumbing Services
             </h1>
             <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8 text-justify">
-              CDL Plumbing & Drainage are a proud family-owned business with
-              over 15 years of expert experience in the Lake Macquarie and
-              Newcastle areas. We have 2 teams and fully equipped trucks ready
-              to handle all plumbing jobs, large or small and are fully
-              licensed, qualified and insured. During this time, we have been
-              building a great reputation for exceptional customer service and
-              high standards of work, whilst maintaining affordability. Service
-              is hugely important to us, and we have learned what our customers
-              require from us – punctuality, reliability, affordability and a
-              friendly manner.
-            </p>
-            <p className=" text-gray-700 text-center text-base md:text-lg p-4 md:p-6 leading-8 text-justify">
-              We always answer all questions in an understandable way as
-              communication is paramount and provide free quotes with no
-              obligation. On top of that, we make sure that we leave all jobs
-              clean and tidy as our reputation depends on it. CDL regularly take
-              on a wide variety of jobs as our service list is very extensive.
-              If you require any general plumbing, gas fitting or drainage work
-              for your home or business, call us to get the job done right,
-              first time, on time and within budget.
+              At Sydney Plumbing, we provide expert plumbing services designed
+              to solve problems quickly, efficiently, and with long-lasting
+              results. Our experienced team of licensed plumbers delivers
+              high-quality workmanship across all aspects of residential and
+              commercial plumbing, ensuring your property remains safe,
+              functional, and free from disruptive plumbing issues. We
+              understand that plumbing problems can happen at any time, which is
+              why we offer responsive and dependable service for urgent repairs
+              and ongoing maintenance. From blocked drains and burst pipes to
+              hot water system failures, heat pump installations, toilet
+              repairs, and leak detection, we have the skills and equipment to
+              handle it all. Using advanced diagnostic tools and proven repair
+              techniques, we accurately identify the root cause of plumbing
+              issues rather than just treating the symptoms. This allows us to
+              provide effective, long-term solutions that help prevent recurring
+              problems and unnecessary costs. Our team is committed to
+              delivering honest advice, upfront pricing, and professional
+              service on every job. Whether it's a small household repair or a
+              large-scale commercial plumbing project, we approach every task
+              with the same level of care, attention to detail, and commitment
+              to quality. Proudly servicing Sydney and surrounding suburbs, we
+              are dedicated to being the local plumbers you can trust for fast
+              response times, reliable service, and expert plumbing solutions
+              tailored to your needs.
             </p>
           </div>
         </div>
@@ -90,23 +84,30 @@ export default function Home() {
           How we guarantee a hassle-free experience
         </h1>
         <p className="leading-8 text-gray-700 text-justify">
-          We are a proudly owned and run Australian family business. By that, we
-          mean that we are not a corporation that only watches profits to keep
-          shareholders happy. We are a team of committed professional
-          experienced plumbers who not only enjoy what we do but are part of
-          your community.We are a proudly owned and run Australian family
-          business. By that, we mean that we are not a corporation that only
-          watches profits to keep shareholders happy. We are a team of committed
-          professional experienced plumbers who not only enjoy what we do but
-          are part of your community.We are a proudly owned and run Australian
-          family business. By that, we mean that we are not a corporation that
-          only watches profits to keep shareholders happy. We are a team of
-          committed professional experienced plumbers who not only enjoy what we
-          do but are part of your community.We are a proudly owned and run
-          Australian family business. By that, we mean that we are not a
-          corporation that only watches profits to keep shareholders happy. We
-          are a team of committed professional experienced plumbers who not only
-          enjoy what we do but are part of your community.
+          At Sydney Plumbing, we are committed to making every plumbing job as
+          smooth and hassle-free as possible for our customers. We understand
+          that plumbing issues can be disruptive and stressful, which is why we
+          have designed our process to be simple, transparent, and efficient
+          from the moment you contact us through to job completion. It starts
+          with clear communication and fast response times. When you reach out,
+          our friendly team listens to your issue, provides practical advice,
+          and arranges a convenient time for service. We always aim to arrive on
+          time and fully prepared, so there are no unnecessary delays or
+          surprises. Before any work begins, we provide clear, upfront pricing
+          so you know exactly what to expect. There are no hidden costs or
+          confusing fees—just honest, transparent quotes that give you
+          confidence and control over your decision. Our licensed plumbers use
+          modern tools and proven techniques to diagnose and resolve plumbing
+          issues efficiently. Whether it's a blocked drain, burst pipe, hot
+          water system fault, or general plumbing repair, we focus on delivering
+          long-lasting solutions that prevent repeat problems. We also respect
+          your home or business by keeping work areas clean and tidy, and
+          completing every job with care and attention to detail. Our goal is
+          not just to fix the issue, but to provide a smooth, stress-free
+          experience that gives you complete peace of mind. From start to
+          finish, Sydney Plumbing is committed to reliable service, professional
+          workmanship, and a customer-first approach that makes plumbing simple
+          and hassle-free.
         </p>
         <div
           className="relative h-[400px] md:h-[500px] lg:h-[600px] bg-fixed bg-center bg-cover rounded-3xl overflow-hidden my-10"
@@ -125,7 +126,7 @@ export default function Home() {
                 Need a Plumbing Expert in Sydney?
               </p>
               <p className="text-center justify-center mb-5 px-4 md:px-10 lg:px-20 text-base md:text-xl leading-8 md:leading-10">
-                Call CDL Plumbing & Drainage to speak to one of our friendly
+                Call Sydney plumbing team to speak to one of our friendly
                 technicians, get a free quote and get your plumbing project
                 booked in.
               </p>
@@ -151,8 +152,7 @@ export default function Home() {
   );
 }
 
-export const metadata: Metadata =  {
-  title: 'Sydney Plumbing',
-  description: 'Trusted plumbing service in Sydney'
-
-}
+export const metadata: Metadata = {
+  title: "Sydney Plumbing",
+  description: "Trusted plumbing service in Sydney",
+};

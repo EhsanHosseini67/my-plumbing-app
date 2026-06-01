@@ -46,6 +46,6 @@ const Faq = () => {
 export default Faq;
 
 export const metadata: Metadata = {
-  title: 'Faq',
+  title: 'FAQ',
   description: 'Frequently asked questions about our business',
 }
