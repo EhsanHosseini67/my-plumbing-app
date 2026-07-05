@@ -14,7 +14,7 @@ const Faq = () => {
         <ExpandableList />
       </div>
 
-      <div className="mt-16 lg:mt-20">
+      <div className="mt-16 lg:mt-20" id="Contact">
         <h1 className="text-3xl sm:text-4xl font-bold mb-8">Get In Touch</h1>
 
         <div className="space-y-5 mt-10">
@@ -38,6 +38,15 @@ const Faq = () => {
             <p className="text-base sm:text-lg break-all">plumbing@gmail.com</p>
           </div>
         </div>
+        <div className="mt-8 md:w-[600px] h-[300px] md:h-[400px] rounded-xl overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.071748574976!2d151.00847787598417!3d-33.83626027323916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a32d7431613b%3A0x4ed2381496451fb5!2s2%20Blaxcell%20St%2C%20Granville%20NSW%202142!5e0!3m2!1sen!2sau!4v1783151637117!5m2!1sen!2sau"
+            style={{ border: 0 }}
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            className="mt-4 w-full h-full border-0"
+          ></iframe>
+        </div>
       </div>
     </Container>
   );
@@ -46,6 +55,6 @@ const Faq = () => {
 export default Faq;
 
 export const metadata: Metadata = {
-  title: 'FAQ',
-  description: 'Frequently asked questions about our business',
-}
+  title: "FAQ",
+  description: "Frequently asked questions about our business",
+};

@@ -9,7 +9,7 @@ const page = () => {
       <h1>What We Can Help You With</h1>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2>Blocked Drains</h2>
+          <h2 id="BD">Blocked Drains</h2>
           <p className="text-justify leading-7">
             {" "}
             Blocked drains are one of the most common plumbing issues faced by
@@ -38,13 +38,13 @@ const page = () => {
           src="/images/plumber-drain-cleaner-perth-1024x683.webp"
           width="480"
           height="120"
-          alt="blocked drains"
+          alt="Emergency plumber repairing blocked drain"
           className="h-auto w-full lg:w-[480px] md:h-[400px] mt-7 rounded-2xl shadow-sm object-cover"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2>Burst Pipes</h2>
+          <h2 id="BP">Burst Pipes</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A burst pipe can cause significant water damage to your property if
@@ -75,13 +75,13 @@ const page = () => {
           src="/images/pipe_burst_emergency.jpg"
           width="480"
           height="120"
-          alt="blocked drains"
+          alt="burst pipe service Sydney plumbing"
           className="h-auto w-full lg:w-[480px] md:h-[400px] mt-7 rounded-2xl shadow-sm object-cover"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2>Hot Water</h2>
+          <h2 id="HW">Hot Water</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A reliable hot water system is essential for the comfort and
@@ -112,13 +112,13 @@ const page = () => {
           src="/images/hot_water.jpg"
           width="480"
           height="120"
-          alt="hot water"
+          alt="hot water service Sydney plumbing"
           className="h-auto w-full lg:w-[480px] md:h-[400px] mt-7 rounded-2xl shadow-sm object-cover"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2>Heat Pupms</h2>
+          <h2 id="HP">Heat Pupms</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             Heat pump hot water systems are an energy-efficient alternative to
@@ -150,13 +150,13 @@ const page = () => {
           src="/images/shutterstock_1914071398__1_.webp"
           width="480"
           height="120"
-          alt="heat pumps"
+          alt="heat pumps service Sydney plumbing"
           className="h-auto w-full lg:w-[480px] md:h-[400px] mt-7 rounded-2xl shadow-sm object-cover"
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2>Toilet Repairs</h2>
+          <h2 id="TR">Toilet Repairs</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A malfunctioning toilet can quickly become inconvenient and
@@ -186,7 +186,7 @@ const page = () => {
           src="/images/repairing-leaky-toilet-tank-flush-valve.jpg"
           width="480"
           height="120"
-          alt="toilet"
+          alt="toilet repair service Sydney plumbing"
           className="h-auto w-full lg:w-[480px] md:h-[400px] mt-7 rounded-2xl shadow-sm object-cover"
         />
       </div>

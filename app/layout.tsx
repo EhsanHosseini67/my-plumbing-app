@@ -1,19 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "./navbar";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import FooterSection from "./FooterSection";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -31,16 +27,35 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className={`${roboto.variable} h-full antialiased`}>
+      <body className={`${roboto.className} min-h-full flex flex-col`}>
         <Theme>
-          <NavBar />
-          <main>{children}</main>
-          <FooterSection />
+          <div className={roboto.className}>
+            <NavBar />
+            <main className="pt-[40px]">{children}</main>
+            <FooterSection />
+          </div>
         </Theme>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Plumber",
+              name: "Sydney Plumbing",
+              telephone: "0477123456",
+              url: "https://yourdomain.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "2 Blaxcell Road",
+                addressLocality: "Granville",
+                addressRegion: "NSW",
+                postalCode: "2142",
+                addressCountry: "AU",
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   );

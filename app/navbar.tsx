@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaBars, FaPhone, FaXmark } from "react-icons/fa6";
 import QuoteButton from "./components/QuoteButton";
 import ThemeToggler from "./components/ThemeToggler";
+import PhoneButton from "./components/PhoneButton";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,14 +36,14 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`bg-emerald-950 text-white sticky top-0 z-50 shadow-md transition-transform
+      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md transition-transform
     duration-300
     ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="text-2xl font-bold tracking-wide">
-            Logo
+          <Link href="/" className="text-2xl tracking-wide">
+            Home
           </Link>
 
           <div className="hidden lg:flex items-center gap-20">
@@ -75,10 +76,7 @@ const NavBar = () => {
             <div className="flex items-center gap-4">
               <QuoteButton />
 
-              <button className="btn bg-emerald-600 hover:bg-white hover:text-emerald-600 btn-lg border-none rounded-full text-white">
-                <FaPhone />
-                0477123456
-              </button>
+              <PhoneButton/>
             </div>
           </div>
 
@@ -111,10 +109,7 @@ const NavBar = () => {
             <div className="flex flex-col gap-4">
               <QuoteButton />
 
-              <button className="btn bg-emerald-600 border-none text-lg rounded-full text-white w-full">
-                <FaPhone />
-                0477123456
-              </button>
+              <PhoneButton/>
             </div>
           </div>
         )}

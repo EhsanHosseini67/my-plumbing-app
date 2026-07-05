@@ -30,7 +30,7 @@ const AboutUs = () => {
 
         <Image
           src="/images/a-male-plumber-s-hand-repairing-a-leaking-sink-pipe-with-an-adjustable-wrench-free-photo.jpg"
-          alt="who we are"
+          alt="who are Sydney plumbers"
           width={920}
           height={600}
           className="w-full h-auto rounded-2xl shadow-sm object-cover"
@@ -60,7 +60,7 @@ const AboutUs = () => {
 
         <Image
           src="/images/plumbing-1920-x-1081-picture-rjnxszdlvn9w5h19.jpg"
-          alt="why choose us"
+          alt="why choose Sydney plumbers"
           width={920}
           height={600}
           className="w-full h-auto rounded-2xl shadow-sm object-cover"

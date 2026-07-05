@@ -40,7 +40,7 @@ const ExpandableList = () => {
   return (
     <div className="mt-10">
       {FaqItems.map((item, index) => (
-        <div key={index} className="flex justify-between gap-5 border-b pb-5">
+        <div key={index} className="flex justify-between items-start gap-5 border-b pb-5 mt-2">
           <div>
             <h2>{item.question}</h2>
 

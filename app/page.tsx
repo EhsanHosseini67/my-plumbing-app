@@ -132,13 +132,13 @@ export default function Home() {
               </p>
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-5">
                 <Link
-                  href="/"
+                  href="/Quote"
                   className="btn  bg-emerald-600 text-white hover:bg-white hover:text-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   Get A Quote
                 </Link>
                 <Link
-                  href="/"
+                  href="/FAQ#Contact"
                   className="btn  bg-emerald-600 text-white hover:bg-white hover:text-emerald-600 text-lg md:text-2xl px-6 py-4 md:px-8 md:py-6 font-bold rounded-full"
                 >
                   0477123456

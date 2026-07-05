@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaPhone, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -28,11 +29,21 @@ const FooterSection = () => {
         <div>
           <h2 className="text-blue-900 font-bold text-xl mb-5">Our Services</h2>
           <ul className="list-disc pl-5 space-y-2">
-            <li>Blocked Drains</li>
-            <li>Burst Pipes</li>
-            <li>Hot Water</li>
-            <li>Heat Pupms</li>
-            <li>Toilet Repairs</li>
+            <Link href="/Services#BD">
+              <li className="mb-2">Blocked Drains</li>
+            </Link>
+            <Link href="/Services#BP">
+              <li className="mb-2">Burst Pipes</li>
+            </Link>
+            <Link href="/Services#HW">
+              <li className="mb-2">Hot Water</li>
+            </Link>
+            <Link href="/Services#HP">
+              <li className="mb-2">Heat Pupms</li>
+            </Link>
+            <Link href="/Services#TR">
+              <li className="mb-2">Toilet Repairs</li>
+            </Link>
           </ul>
         </div>
         <div>
