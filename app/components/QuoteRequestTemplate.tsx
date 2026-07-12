@@ -2,37 +2,83 @@
 
 import { Metadata } from "next";
 import { useState } from "react";
+import { FaCity } from "react-icons/fa";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
+
+const schema = z.object({
+  name: z.string().min(3, { message: "Name must be at least 3 characters." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  phone: z.string().min(10, { message: "Please enter a valid phone number." }),
+  city: z.string().min(3, { message: "Please enter your city/suburb." }),
+  message: z
+    .string()
+    .min(10, { message: "Please enter at least 10 characters." }),
+});
+
+type FormData = z.infer<typeof schema>;
 
 const QuoteRequestTemplate = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState({
+    show: false,
+    message: "",
+    type: "success",
+  });
+  const router = useRouter();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+    shouldFocusError: false,
+  });
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      city: formData.get("city"),
-      message: formData.get("message"),
-    };
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
 
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ data }),
-    });
-    if (response.ok) {
-      alert("Your quote request has been sent.");
-    } else {
-      alert("Failed to send your request.");
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setNotification({
+          show: true,
+          message: "Your quote request has been sent.",
+          type: "success",
+        });
+
+        setTimeout(() => {
+          router.push("/");
+        }, 2000);
+      } else {
+        setNotification({
+          show: true,
+          message: "Failed to send your request.",
+          type: "error",
+        });
+      }
+    } catch {
+      setNotification({
+        show: true,
+        message: "Something went wrong. Please try again.",
+        type: "error",
+      });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit)} noValidate>
       <div className="px-4 py-20 sm:px-8 lg:px-20">
         <label
           htmlFor="name"
@@ -42,6 +88,7 @@ const QuoteRequestTemplate = () => {
         </label>
         <div className="mb-5">
           <input
+            {...register("name")}
             type="text"
             name="name"
             id="name"
@@ -60,6 +107,7 @@ const QuoteRequestTemplate = () => {
             focus:ring-primary/20
             "
           />
+          {errors.name && <p className="text-red-600">{errors.name.message}</p>}
         </div>
 
         <label
@@ -70,6 +118,7 @@ const QuoteRequestTemplate = () => {
         </label>
         <div className="mb-5">
           <input
+            {...register("email")}
             type="email"
             name="email"
             id="email"
@@ -87,6 +136,9 @@ const QuoteRequestTemplate = () => {
             focus:ring-2
             focus:ring-primary/20"
           />
+          {errors.email && (
+            <p className="text-red-600">{errors.email.message}</p>
+          )}
         </div>
 
         <label
@@ -97,6 +149,7 @@ const QuoteRequestTemplate = () => {
         </label>
         <div className="mb-5">
           <input
+            {...register("phone")}
             type="tel"
             name="phone"
             className="w-full
@@ -113,6 +166,9 @@ const QuoteRequestTemplate = () => {
             focus:ring-2
             focus:ring-primary/20"
           />
+          {errors.phone && (
+            <p className="text-red-600">{errors.phone.message}</p>
+          )}
         </div>
 
         <label
@@ -123,6 +179,7 @@ const QuoteRequestTemplate = () => {
         </label>
         <div className="mb-5">
           <input
+            {...register("city")}
             type="text"
             name="city"
             id="city"
@@ -140,6 +197,7 @@ const QuoteRequestTemplate = () => {
             focus:ring-2
             focus:ring-primary/20"
           />
+          {errors.city && <p className="text-red-600">{errors.city.message}</p>}
         </div>
 
         <label
@@ -150,6 +208,7 @@ const QuoteRequestTemplate = () => {
         </label>
         <div className="mb-5">
           <textarea
+            {...register("message")}
             name="message"
             placeholder="Type something..."
             className="w-full
@@ -167,6 +226,9 @@ const QuoteRequestTemplate = () => {
             focus:ring-2
             focus:ring-primary/20"
           />
+          {errors.message && (
+            <p className="text-red-600">{errors.message.message}</p>
+          )}
         </div>
 
         <button
@@ -181,8 +243,39 @@ const QuoteRequestTemplate = () => {
         sm:text-lg
         mt-4"
         >
+          {isSubmitting && (
+            <span className="loading loading-spinner loading-sm"></span>
+          )}
           Submit
         </button>
+        {notification.show && (
+  <dialog open className="modal">
+    <div className="modal-box">
+      <h3 className="text-white font-bold text-lg">
+        {notification.type === "success" ? "Success" : "Error"}
+      </h3>
+
+      <p className="text-white py-4">
+        {notification.message}
+      </p>
+
+      <div className="modal-action">
+        <button
+          className="btn"
+          onClick={() =>
+            setNotification({
+              show: false,
+              message: "",
+              type: "success",
+            })
+          }
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </dialog>
+)}
       </div>
     </form>
   );

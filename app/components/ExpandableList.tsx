@@ -40,7 +40,10 @@ const ExpandableList = () => {
   return (
     <div className="mt-10">
       {FaqItems.map((item, index) => (
-        <div key={index} className="flex justify-between items-start gap-5 border-b pb-5 mt-2">
+        <div
+          key={index}
+          className="flex justify-between items-start gap-5 border-b py-5"
+        >
           <div>
             <h2>{item.question}</h2>
 
@@ -49,7 +52,10 @@ const ExpandableList = () => {
             )}
           </div>
 
-          <button onClick={() => toggleItem(index)}>
+          <button
+            onClick={() => toggleItem(index)}
+            className="w-10 h-10 flex items-center justify-center shrink-0 self-start rounded-full hover:bg-gray-100 transition"
+          >
             {expanded === index ? (
               <TiMinus className="text-xl" />
             ) : (
