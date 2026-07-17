@@ -1,4 +1,4 @@
-import { Box, Container } from "@radix-ui/themes";
+import { Container } from "@radix-ui/themes";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +43,7 @@ export default function Home() {
           to providing dependable plumbing services tailored to the needs of our
           local community. Our goal is not just to fix plumbing problems, but to
           deliver peace of mind through quality workmanship and trustworthy
-          service. If you're looking for a reliable plumber in Sydney, Sydney
+          service. If you are looking for a reliable plumber in Sydney, Sydney
           Plumbing is here to help with fast service, expert solutions, and
           customer-focused care you can depend on.
         </p>
@@ -70,7 +70,7 @@ export default function Home() {
               provide effective, long-term solutions that help prevent recurring
               problems and unnecessary costs. Our team is committed to
               delivering honest advice, upfront pricing, and professional
-              service on every job. Whether it's a small household repair or a
+              service on every job. Whether it is a small household repair or a
               large-scale commercial plumbing project, we approach every task
               with the same level of care, attention to detail, and commitment
               to quality. Proudly servicing Sydney and surrounding suburbs, we
@@ -98,7 +98,7 @@ export default function Home() {
           confusing fees—just honest, transparent quotes that give you
           confidence and control over your decision. Our licensed plumbers use
           modern tools and proven techniques to diagnose and resolve plumbing
-          issues efficiently. Whether it's a blocked drain, burst pipe, hot
+          issues efficiently. Whether it is a blocked drain, burst pipe, hot
           water system fault, or general plumbing repair, we focus on delivering
           long-lasting solutions that prevent repeat problems. We also respect
           your home or business by keeping work areas clean and tidy, and

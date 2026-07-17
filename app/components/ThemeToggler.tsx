@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ThemeToggler = () => {
   const [toggle, setToggle] = useState(false);

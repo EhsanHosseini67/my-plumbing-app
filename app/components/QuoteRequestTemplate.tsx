@@ -1,12 +1,10 @@
 "use client";
 
-import { Metadata } from "next";
-import { useState } from "react";
-import { FaCity } from "react-icons/fa";
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 const schema = z.object({
   name: z.string().min(3, { message: "Name must be at least 3 characters." }),

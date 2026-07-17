@@ -1,11 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Container, Flex, Box, Button } from "@radix-ui/themes";
+import { Container } from "@radix-ui/themes";
 import Link from "next/link";
-import { FaBars, FaPhone, FaXmark } from "react-icons/fa6";
-import QuoteButton from "./components/QuoteButton";
-import ThemeToggler from "./components/ThemeToggler";
+import { useEffect, useState } from "react";
+import { FaBars, FaXmark } from "react-icons/fa6";
 import PhoneButton from "./components/PhoneButton";
+import QuoteButton from "./components/QuoteButton";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

@@ -1,10 +1,10 @@
+import { Theme } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import FooterSection from "./FooterSection";
 import "./globals.css";
 import NavBar from "./navbar";
-import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
-import FooterSection from "./FooterSection";
 
 const roboto = Roboto({
   subsets: ["latin"],

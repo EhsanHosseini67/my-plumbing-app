@@ -1,7 +1,6 @@
 import { Container } from "@radix-ui/themes";
 import { Metadata } from "next";
 import Image from "next/image";
-import React from "react";
 
 const page = () => {
   return (
@@ -85,7 +84,7 @@ const page = () => {
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A reliable hot water system is essential for the comfort and
-            convenience of your home or business. If you're experiencing
+            convenience of your home or business. If you are experiencing
             inconsistent water temperatures, a lack of hot water, unusual
             noises, leaks, or rising energy bills, it may be time to repair or
             replace your system. Ignoring these warning signs can lead to
@@ -94,7 +93,7 @@ const page = () => {
             repair services to keep your hot water running efficiently all year
             round. We work with a wide range of electric, gas, and continuous
             flow systems, helping you choose the most suitable solution for your
-            property's needs and budget. Whether you need an urgent repair or a
+            property needs and budget. Whether you need an urgent repair or a
             complete system replacement, we deliver reliable workmanship and
             quality service.
           </p>
@@ -168,7 +167,7 @@ const page = () => {
             toilet repair services to restore full functionality with minimal
             disruption. We quickly identify the cause of the problem and carry
             out effective repairs using quality parts and professional
-            techniques. Whether it's a minor leak, a persistent blockage, or a
+            techniques. Whether it is a minor leak, a persistent blockage, or a
             complete flush system failure, we ensure your toilet is working
             efficiently again.
           </p>

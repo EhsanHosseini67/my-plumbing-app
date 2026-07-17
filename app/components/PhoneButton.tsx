@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import React from "react";
-import { FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const PhoneButton = () => {
   const router = useRouter();

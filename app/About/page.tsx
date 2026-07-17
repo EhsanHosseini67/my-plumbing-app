@@ -1,7 +1,6 @@
-import React from "react";
-import Image from "next/image";
 import { Container } from "@radix-ui/themes";
 import { Metadata } from "next";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -20,10 +19,10 @@ const AboutUs = () => {
           repairs to complex plumbing issues. We understand how disruptive
           plumbing problems can be, which is why we prioritise clear
           communication, efficient service, and long-lasting results. Whether
-          it's a blocked drain, burst pipe, hot water system issue, or general
+          it is a blocked drain, burst pipe, hot water system issue, or general
           plumbing maintenance, we approach every job with the same level of
           care and attention to detail. We proudly serve local homeowners and
-          businesses, offering practical solutions tailored to each property's
+          businesses, offering practical solutions tailored to each property
           needs. Our goal is not just to fix plumbing issues, but to provide
           peace of mind through trustworthy service and reliable support.
         </p>
@@ -50,7 +49,7 @@ const AboutUs = () => {
           understand that plumbing issues can be urgent and disruptive, which is
           why we prioritise prompt response times and efficient service. Our
           licensed plumbers use modern tools and proven techniques to diagnose
-          and fix problems correctly the first time. Whether it's a blocked
+          and fix problems correctly the first time. Whether it is a blocked
           drain, burst pipe, hot water issue, or general plumbing maintenance,
           we deliver practical solutions tailored to your needs. We also believe
           in transparent communication and fair pricing, so you always know what

@@ -1,9 +1,8 @@
 import { Container } from "@radix-ui/themes";
-import React from "react";
-import ExpandableList from "../components/ExpandableList";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { Metadata } from "next";
+import { FaLocationDot, FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import ExpandableList from "../components/ExpandableList";
 
 const Faq = () => {
   return (
