@@ -54,6 +54,12 @@ const ExpandableList = () => {
           <button
             onClick={() => toggleItem(index)}
             className="w-10 h-10 flex items-center justify-center shrink-0 self-start rounded-full hover:bg-gray-100 transition"
+            aria-expanded={expanded === index}
+            aria-label={
+              expanded === index
+                ? `Collapse ${item.question}`
+                : `Expand ${item.question}`
+            }
           >
             {expanded === index ? (
               <TiMinus className="text-xl" />

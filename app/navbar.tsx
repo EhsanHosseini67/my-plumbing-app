@@ -83,6 +83,7 @@ const NavBar = () => {
           <button
             className="lg:hidden text-3xl"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {menuOpen ? <FaXmark /> : <FaBars />}
           </button>
