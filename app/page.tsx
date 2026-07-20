@@ -110,7 +110,7 @@ export default function Home() {
           and hassle-free.
         </p>
         <div
-          className="relative h-[400px] md:h-[500px] lg:h-[600px] bg-fixed bg-center bg-cover rounded-3xl overflow-hidden my-10"
+          className="relative h-[400px] md:h-[500px] lg:h-[600px] bg-scroll lg:bg-fixed bg-center bg-cover rounded-3xl overflow-hidden my-10"
           style={{
             backgroundImage:
               "url('/images/1000_F_783550299_nSOwzmYewJJQJxz0aB7Fmyju0H6PUael.jpg')",

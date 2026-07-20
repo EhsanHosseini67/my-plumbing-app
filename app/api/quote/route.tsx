@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   try {
     await resend.emails.send({
       from: "Domain",
-      to: "xxxxxxx@gmail.com",
+      to: "ehsanhosseini67@gmail.com",
       subject: "quote",
       react: emailTemplate,
     });
