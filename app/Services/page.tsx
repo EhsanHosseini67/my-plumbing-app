@@ -8,7 +8,7 @@ const page = () => {
       <h1>What We Can Help You With</h1>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2 className="scroll-mt-24" id="BD">Blocked Drains</h2>
+          <h2 className="scroll-mt-16 lg:scroll-mt-24" id="BD">Blocked Drains</h2>
           <p className="text-justify leading-7">
             {" "}
             Blocked drains are one of the most common plumbing issues faced by
@@ -43,7 +43,7 @@ const page = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2 className="scroll-mt-24" id="BP">Burst Pipes</h2>
+          <h2 className="scroll-mt-16 lg:scroll-mt-24" id="BP">Burst Pipes</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A burst pipe can cause significant water damage to your property if
@@ -80,7 +80,7 @@ const page = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2 className="scroll-mt-24" id="HW">Hot Water</h2>
+          <h2 className="scroll-mt-16 lg:scroll-mt-24" id="HW">Hot Water</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A reliable hot water system is essential for the comfort and
@@ -117,7 +117,7 @@ const page = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2 className="scroll-mt-24" id="HP">Heat Pupms</h2>
+          <h2 className="scroll-mt-16 lg:scroll-mt-24" id="HP">Heat Pupms</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             Heat pump hot water systems are an energy-efficient alternative to
@@ -155,7 +155,7 @@ const page = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
-          <h2 className="scroll-mt-24" id="TR">Toilet Repairs</h2>
+          <h2 className="scroll-mt-16 lg:scroll-mt-24" id="TR">Toilet Repairs</h2>
           <p className="text-justify leading-7 max-w-2xl">
             {" "}
             A malfunctioning toilet can quickly become inconvenient and

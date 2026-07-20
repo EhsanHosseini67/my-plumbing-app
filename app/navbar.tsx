@@ -97,19 +97,19 @@ const NavBar = () => {
           <div className="lg:hidden pb-6">
             <ul className="flex flex-col gap-5 text-lg mb-6">
               <li>
-                <Link href="/About">About Us</Link>
+                <Link href="/About" onClick={() => setMenuOpen(false)}>About Us</Link>
               </li>
 
               <li>
-                <Link href="/Services">Services</Link>
+                <Link href="/Services" onClick={() => setMenuOpen(false)}>Services</Link>
               </li>
 
               <li>
-                <Link href="/FAQ">FAQ</Link>
+                <Link href="/FAQ" onClick={() => setMenuOpen(false)}>FAQ</Link>
               </li>
             </ul>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4" onClick={() => setMenuOpen(false)}>
               <QuoteButton />
 
               <PhoneButton/>
