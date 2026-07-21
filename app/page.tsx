@@ -6,7 +6,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] w-full">
+      <div
+        className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] w-full bg-cover bg-center"
+      >
         <Image
           src="/images/mybackground.jpg"
           alt={"background image"}

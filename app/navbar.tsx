@@ -5,11 +5,15 @@ import { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import PhoneButton from "./components/PhoneButton";
 import QuoteButton from "./components/QuoteButton";
+import { useRouter } from "next/navigation";
+import { isHmrRefresh } from "next/dist/server/app-render/work-unit-async-storage.external";
+
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const router = useRouter();
 /*
   useEffect(() => {
     const handleScroll = () => {
@@ -44,7 +48,7 @@ const NavBar = () => {
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="text-2xl tracking-wide">
+          <Link href="/" className="text-2xl tracking-wide" onClick={() => menuOpen ? setMenuOpen(false) : router.push('/')}>
             Home
           </Link>
 
