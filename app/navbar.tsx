@@ -8,13 +8,12 @@ import QuoteButton from "./components/QuoteButton";
 import { useRouter } from "next/navigation";
 import { isHmrRefresh } from "next/dist/server/app-render/work-unit-async-storage.external";
 
-
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const router = useRouter();
-/*
+  /*
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -48,7 +47,11 @@ const NavBar = () => {
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
-          <Link href="/" className="text-2xl tracking-wide" onClick={() => menuOpen ? setMenuOpen(false) : router.push('/')}>
+          <Link
+            href="/"
+            className="text-2xl tracking-wide"
+            onClick={() => (menuOpen ? setMenuOpen(false) : router.push("/"))}
+          >
             Home
           </Link>
 
@@ -82,7 +85,7 @@ const NavBar = () => {
             <div className="flex items-center gap-4">
               <QuoteButton />
 
-              <PhoneButton/>
+              <PhoneButton />
             </div>
           </div>
 
@@ -90,7 +93,9 @@ const NavBar = () => {
           <button
             className="lg:hidden text-3xl"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              menuOpen ? "Close navigation menu" : "Open navigation menu"
+            }
           >
             {menuOpen ? <FaXmark /> : <FaBars />}
           </button>
@@ -98,25 +103,34 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="fixed top-[72px] left-0 w-full z-40 bg-emerald-950 text-white lg:hidden">
+          <div className=" text-white lg:hidden">
             <ul className="flex flex-col gap-5 text-lg mb-6">
               <li>
-                <Link href="/About" onClick={() => setMenuOpen(false)}>About Us</Link>
+                <Link href="/About" onClick={() => setMenuOpen(false)}>
+                  About Us
+                </Link>
               </li>
 
               <li>
-                <Link href="/Services" onClick={() => setMenuOpen(false)}>Services</Link>
+                <Link href="/Services" onClick={() => setMenuOpen(false)}>
+                  Services
+                </Link>
               </li>
 
               <li>
-                <Link href="/FAQ" onClick={() => setMenuOpen(false)}>FAQ</Link>
+                <Link href="/FAQ" onClick={() => setMenuOpen(false)}>
+                  FAQ
+                </Link>
               </li>
             </ul>
 
-            <div className="flex flex-col gap-4" onClick={() => setMenuOpen(false)}>
+            <div
+              className="flex flex-col gap-4"
+              onClick={() => setMenuOpen(false)}
+            >
               <QuoteButton />
 
-              <PhoneButton/>
+              <PhoneButton />
             </div>
           </div>
         )}
