@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="relative h-[50vh] md:h-[60vh] lg:h-[70vh] w-full bg-cover bg-center"
+        className="relative h-[50svh] md:h-[60vh] lg:h-[70vh] w-full overflow-hidden bg-cover bg-center"
       >
         <Image
           src="/images/mybackground.jpg"

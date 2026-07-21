@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md`}
+      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate`}
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
@@ -98,7 +98,7 @@ const NavBar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden pb-6">
+          <div className="fixed top-[72px] left-0 w-full z-40 bg-emerald-950 text-white lg:hidden">
             <ul className="flex flex-col gap-5 text-lg mb-6">
               <li>
                 <Link href="/About" onClick={() => setMenuOpen(false)}>About Us</Link>

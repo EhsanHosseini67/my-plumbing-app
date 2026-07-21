@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${roboto.variable} h-full antialiased`}>
-      <body className={`${roboto.className} min-h-full flex flex-col`}>
+      <body className={`${roboto.className} min-h-full flex flex-col overflow-x-hidden`}>
         <Theme>
           <div className={roboto.className}>
             <NavBar />
