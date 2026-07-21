@@ -28,7 +28,7 @@ const AboutUs = () => {
         </p>
 
         <Image
-          src="/images/a-male-plumber-s-hand-repairing-a-leaking-sink-pipe-with-an-adjustable-wrench-free-photo.jpg"
+          src="/images/a-male-plumber.jpg"
           alt="who are Sydney plumbers"
           width={920}
           height={600}
