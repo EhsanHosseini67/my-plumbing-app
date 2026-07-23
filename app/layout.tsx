@@ -28,11 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${roboto.variable} h-full antialiased`}>
-      <body className={`${roboto.className} min-h-full flex flex-col overflow-x-hidden mt-0`}>
+      <body className={`${roboto.className} min-h-full flex flex-col overflow-x-hidden`}>
         <Theme>
           <div className={roboto.className}>
             <NavBar />
-            <main className="pt-20">{children}</main>
+            <main className="lg:pt-20 pt-5">{children}</main>
             <FooterSection />
           </div>
         </Theme>
