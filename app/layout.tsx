@@ -32,7 +32,7 @@ export default function RootLayout({
         <Theme>
           <div className={roboto.className}>
             <NavBar />
-            <main>{children}</main>
+            <main className="sm:pt-20">{children}</main>
             <FooterSection />
           </div>
         </Theme>
