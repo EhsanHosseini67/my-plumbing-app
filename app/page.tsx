@@ -7,13 +7,12 @@ export default function Home() {
   return (
     <>
       <div
-        className="relative min-h-[50svh] md:h-[60vh] lg:h-[70vh] w-full overflow-hidden bg-emerald-950"
+        className="relative h-[50svh] md:h-[60vh] lg:h-[70vh] w-full overflow-hidden bg-emerald-950"
       >
         <Image
           src="/images/mybackground.jpg"
           alt={"background image"}
           fill
-          translate-3d-0
           priority
           className="object-cover scale-1.02"
         />

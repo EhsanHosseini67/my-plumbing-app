@@ -10,8 +10,8 @@ import { isHmrRefresh } from "next/dist/server/app-render/work-unit-async-storag
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
- /* const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0); */
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0); 
   const router = useRouter();
   /*
   useEffect(() => {
