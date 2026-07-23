@@ -13,7 +13,7 @@ const NavBar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0); 
   const router = useRouter();
-  /*
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -35,7 +35,8 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
-
+  
+/*
   transition-transform
     duration-300
     ${showNavbar ? "translate-y-0" : "-translate-y-full"}
@@ -43,7 +44,9 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate`}
+      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate transition-transform
+      duration-300
+      ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
