@@ -10,8 +10,8 @@ import { isHmrRefresh } from "next/dist/server/app-render/work-unit-async-storag
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+ /* const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0); */
   const router = useRouter();
   /*
   useEffect(() => {
@@ -43,7 +43,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate`}
+      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full shadow-md isolation-isolate`}
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
