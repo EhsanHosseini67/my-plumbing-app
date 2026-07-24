@@ -77,7 +77,7 @@ const QuoteRequestTemplate = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate>
-      <div className="px-4 py-20 sm:px-8 lg:px-20">
+      <div className="px-4 py-20 sm:px-8 lg:px-20 lg:pt-20 pt-2">
         <label
           htmlFor="name"
           className="block mb-2 text-sm sm:text-base font-medium"

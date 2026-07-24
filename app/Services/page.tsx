@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const page = () => {
   return (
-    <Container className="section-container py-20">
+    <Container className="section-container py-20 lg:pt-20 pt-2">
       <h1>What We Can Help You With</h1>
       <div className="flex flex-col lg:flex-row gap-8 mt-10">
         <div className="flex-1">
