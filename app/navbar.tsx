@@ -44,7 +44,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate`}
+      className={`bg-emerald-950 text-white fixed top-0 left-0 w-full z-50 shadow-md isolation-isolate bg-emerald-950`}
     >
       <Container className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">

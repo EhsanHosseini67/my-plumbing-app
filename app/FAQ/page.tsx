@@ -6,7 +6,7 @@ import ExpandableList from "../components/ExpandableList";
 
 const Faq = () => {
   return (
-    <Container className="section-container py-16 lg:py-20 lg:pt-20 pt-2">
+    <Container className="section-container py-16 lg:py-20">
       <h1 className="text-3xl sm:text-4xl font-bold text-center">FAQ</h1>
 
       <div className="mt-10">
