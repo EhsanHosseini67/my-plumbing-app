@@ -39,7 +39,7 @@ const QuoteRequestTemplate = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/api/quote", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,9 +54,7 @@ const QuoteRequestTemplate = () => {
           type: "success",
         });
 
-        setTimeout(() => {
-          router.push("/");
-        }, 2000);
+        
       } else {
         setNotification({
           show: true,
@@ -260,13 +258,15 @@ const QuoteRequestTemplate = () => {
       <div className="modal-action">
         <button
           className="btn"
-          onClick={() =>
+          onClick={() => {
             setNotification({
               show: false,
               message: "",
               type: "success",
-            })
-          }
+              
+            });
+            router.push("/");
+          }}
         >
           Close
         </button>
